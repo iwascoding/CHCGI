@@ -4,7 +4,7 @@ CGIKit is an Objective-C class to aid in the writing of Cocoa CGI scripts for th
 
 # How do I use this
 
-To create your own CGI handler for the cocoahub, duplicate the sample CGI repository or follow these steps:
+To create your own CGI handler for the cocoahub, duplicate the [cocahub sample CGI repository](https://github.com/iwascoding/cocoahubSampleCGI) or follow these steps:
 
 * Create a new command-line tool project in Xcode of type 'Foundation'
 * Create a Podfile, like this
@@ -41,10 +41,10 @@ pod 'CHCGI', :podspec => 'https://raw.github.com/iwascoding/CHCGI/master/CHCGI.p
 ```
 int main(int argc, const char * argv[])
 {
-	@autoreleasepool {
+	@autoreleasepool 
+	{
 	    // insert code here...
 	    [[[MYCustomCGIClass alloc] init] generateResponse];
-		
 	}
     return 0;
 }
