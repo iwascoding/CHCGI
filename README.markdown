@@ -50,8 +50,24 @@ int main(int argc, const char * argv[])
 }
 ```
 
+# Setting up your Xcode project
 
-##License
+There is a small configuration to be made in your Xcode project, if you wan to build from the command-line:
+
+* From the 'product' menu, choose 'Scheme > Manage Schemes"
+* Check the box in the "Shared" column for your CGI's scheme 
+
+# Installing the CGI
+
+
+* On the Mac that runs your cocoahub installation, open the Terminal and checkout your GitHub project your sever's source directory. 
+
+* Register your cocahub GitHub listener port in your repository's setting on GitHub.
+
+* Click the 'Test' button on GitHub to start the build process.
+
+
+#License
 
 CHCGI is licensed under the MIT license, which is reproduced in its entirety here:
 
